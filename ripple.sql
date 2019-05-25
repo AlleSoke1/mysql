@@ -674,6 +674,10 @@ CREATE TABLE IF NOT EXISTS `users_stats` (
   `custom_badge_name` varchar(32) NOT NULL DEFAULT '',
   `can_custom_badge` tinyint(1) NOT NULL DEFAULT '0',
   `show_custom_badge` tinyint(1) NOT NULL DEFAULT '0',
+  `playtime_std` int(20) NOT NULL DEFAULT '0',
+  `playtime_ctb` int(20) NOT NULL DEFAULT '0',
+  `playtime_mania` int(20) NOT NULL DEFAULT '0',
+  `playtime_taiko` int(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
