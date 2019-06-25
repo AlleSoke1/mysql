@@ -11,6 +11,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+DROP DATABASE IF EXISTS `ripple`
 
 -- Dumping database structure for ripple
 CREATE DATABASE IF NOT EXISTS `ripple` /*!40100 DEFAULT CHARACTER SET latin1 */;
@@ -508,7 +509,7 @@ CREATE TABLE IF NOT EXISTS `scores` (
   `katus_count` smallint(5) NOT NULL DEFAULT '0',
   `gekis_count` smallint(5) NOT NULL DEFAULT '0',
   `misses_count` smallint(5) NOT NULL DEFAULT '0',
-  `time` int(10) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
   `play_mode` tinyint(1) NOT NULL DEFAULT '0',
   `completed` tinyint(1) NOT NULL DEFAULT '0',
   `accuracy` float(6,3) NOT NULL DEFAULT '0',
@@ -533,7 +534,7 @@ CREATE TABLE IF NOT EXISTS `scores_removed` (
   `katus_count` smallint(5) NOT NULL DEFAULT '0',
   `gekis_count` smallint(5) NOT NULL DEFAULT '0',
   `misses_count` smallint(5) NOT NULL DEFAULT '0',
-  `time` int(10) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
   `play_mode` tinyint(1) NOT NULL DEFAULT '0',
   `completed` tinyint(1) NOT NULL DEFAULT '0',
   `accuracy` float(6,3) NOT NULL DEFAULT '0',
